@@ -1,8 +1,7 @@
-from django.conf.urls.defaults import patterns, url
-
-from djangohelper.helper import flash_login_required, ajax_login_required
+from django.conf.urls import patterns, url
 
 import views
+
 urlpatterns = patterns('',
     url('^ajax_upload/$', views.ajax_upload, name='attachments_ajax_upload'),
     url('^ajax_delete/$', views.ajax_delete, name='attachments_ajax_delete'),
